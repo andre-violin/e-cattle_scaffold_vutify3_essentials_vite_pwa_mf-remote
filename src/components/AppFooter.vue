@@ -12,7 +12,9 @@
       <v-icon
         :icon="item.icon"
         :size="item.icon === 'custom:ecattleIcon' ? 24 : 16"
+        :title="item.title"
       />
+      <span class="d-none">{ item.title }</span>
     </a>
 
     <div
