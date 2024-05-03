@@ -9,7 +9,10 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <v-icon :icon="item.icon" :size="item.icon === 'custom:ecattleIcon' ? 24 : 16" />
+      <v-icon
+        :icon="item.icon"
+        :size="item.icon === 'custom:ecattleIcon' ? 24 : 16"
+      />
     </a>
 
     <div
@@ -43,7 +46,7 @@ const items = [
     icon: 'mdi-github',
     href: 'https://github.com/e-cattle'
   }
-];
+]
 </script>
 
 <style scoped lang="sass">
