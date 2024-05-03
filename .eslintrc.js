@@ -4,7 +4,12 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['standard', 'plugin:vue/vue3-essential', 'prettier'],
+  extends: [
+    'standard',
+    'plugin:vue/vue3-essential',
+    'plugin:vuejs-accessibility/recommended',
+    'prettier'
+  ],
   overrides: [
     {
       env: {
@@ -20,6 +25,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['vue'],
+  plugins: ['vue', 'vuejs-accessibility'],
   rules: {}
 }
