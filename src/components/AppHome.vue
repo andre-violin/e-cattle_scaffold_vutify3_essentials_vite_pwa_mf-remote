@@ -12,9 +12,7 @@
 
         <h1 class="text-h2 font-weight-bold"><em class="mr-1">e-</em>Cattle</h1>
 
-        <div class="text-body-2 font-weight-light mb-n1">
-          Host Application
-        </div>
+        <div class="text-body-2 font-weight-light mb-n1">Host Application</div>
       </div>
     </v-responsive>
   </v-container>

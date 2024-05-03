@@ -6,7 +6,7 @@ const customSvgIcons = {
 }
 
 const customSVGs = {
-  component: (props) => h(customSvgIcons[props.icon], { class: 'v-icon__svg' })
+  component: props => h(customSvgIcons[props.icon], { class: 'v-icon__svg' })
 }
 
 export { customSVGs }
