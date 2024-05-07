@@ -8,12 +8,14 @@ import VueRouter from 'unplugin-vue-router/vite'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { VitePWA } from 'vite-plugin-pwa'
 import mkcert from 'vite-plugin-mkcert'
+import federation from '@originjs/vite-plugin-federation'
 
 // Utilities
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 import configPWA from './config.pwa'
 import { version } from './package.json'
+import configFederation from './config.federation'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -49,7 +51,8 @@ export default defineConfig({
       vueTemplate: true
     }),
     VitePWA(configPWA),
-    mkcert()
+    mkcert(),
+    federation(configFederation)
   ],
   build: {
     rollupOptions: {
@@ -58,7 +61,11 @@ export default defineConfig({
         chunkFileNames: `[name].${version}.js`,
         assetFileNames: `[name].${version}.[ext]`
       }
-    }
+    },
+    modulePreload: false,
+    target: 'esnext',
+    minify: true,
+    cssMinify: true
   },
   define: { 'process.env': {} },
   resolve: {
