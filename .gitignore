@@ -27,6 +27,7 @@ yarn-error.log*
 **/public/workbox-*.js
 **/public/sw.js
 **/public/fallback-*.js
+/dev-dist
 
 # storybook
 /storybook-static
