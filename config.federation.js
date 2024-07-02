@@ -4,5 +4,5 @@ export default {
   exposes: {
     './AppHome': './src/components/AppHome'
   },
-  shared: ['vue', 'vuetify']
+  shared: ['vue', 'vuetify', 'qrcode-vue3']
 }

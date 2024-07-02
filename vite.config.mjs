@@ -77,7 +77,7 @@ export default defineConfig({
   server: {
     https: true,
     host: true,
-    port: 5001,
+    port: 5005,
     strictPort: true,
     cors: {
       origin: '*',

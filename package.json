@@ -2,10 +2,10 @@
   "name": "e-cattle_scaffold_vutify3_essentials_vite_pwa_mf-remote",
   "version": "0.0.3",
   "scripts": {
-    "dev": "vite --port 5001 --strictPort",
+    "dev": "vite --port 5005 --strictPort",
     "start": "npm run build && npm run preview",
     "build": "vite build",
-    "preview": "vite preview --port 5001 --strictPort",
+    "preview": "vite preview --port 5005 --strictPort",
     "lint": "eslint src --ext js,vue --max-warnings=0",
     "lint:fix": "eslint src --ext js,vue --fix",
     "format:check": "prettier --check .",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@mdi/font": "7.0.96",
     "core-js": "^3.34.0",
+    "qrcode-vue3": "^1.6.8",
     "roboto-fontface": "*",
     "vue": "^3.4.0",
     "vuetify": "^3.5.0"
